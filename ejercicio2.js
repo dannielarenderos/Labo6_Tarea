@@ -1,5 +1,5 @@
 
-prompt("---- CONVERTIDOR ----  Metros <=> Centímetros |  Kilómetros <=> Metros | Pies <=> Metros |   Celsius <=> Fahrenheit | Kelvin <=> Fahrenheit |  Kelvin <=> Celsius.  --> Ingrese cualquier tecla" )
+prompt("---- CONVERTIDOR ----  Metros <=> Centímetros |  Kilómetros <=> Metros | Pies <=> Metros |   Celsius <=> Fahrenheit | Kelvin <=> Fahrenheit |  Kelvin <=> Celsius.  --> Ingrese cualquier tecla")
 
 function MenuConver(num, uni_tengo, unidad_quiero, tipo) {
 
@@ -80,18 +80,18 @@ function MenuConver(num, uni_tengo, unidad_quiero, tipo) {
             if (uni_tengo == "k") {
                 switch (unidad_quiero) {
                     case "c":
-                        unidad = num-273.15;
+                        unidad = num - 273.15;
                         console.log(unidad + unidad_quiero)
                         break;
 
                     case "f":
-                        unidad =  ((9/5)*(num-273.15))+32;
+                        unidad = ((9 / 5) * (num - 273.15)) + 32;
                         console.log(unidad + unidad_quiero)
 
                         break;
 
 
-                        default:
+                    default:
                         console.log(" Si quiere de Kelvin a --> c = celsius | f = fahrenheit")
                         break;
                 }
@@ -100,18 +100,18 @@ function MenuConver(num, uni_tengo, unidad_quiero, tipo) {
             if (uni_tengo == "f") {
                 switch (unidad_quiero) {
                     case "c":
-                        unidad = (5/9)*(num-32);
+                        unidad = (5 / 9) * (num - 32);
                         console.log(unidad + unidad_quiero)
                         break;
 
                     case "k":
-                        unidad =  ((5/9)*(num-32))+273.15;
+                        unidad = ((5 / 9) * (num - 32)) + 273.15;
                         console.log(unidad + unidad_quiero)
 
                         break;
 
 
-                        default:
+                    default:
                         console.log("Si quiere de fahrenheit a -->  c = celsius | k = kelvin")
                         break;
                 }
@@ -127,13 +127,13 @@ function MenuConver(num, uni_tengo, unidad_quiero, tipo) {
                         break;
 
                     case "f":
-                        unidad =  ( (9/5)*num)+32;
+                        unidad = ((9 / 5) * num) + 32;
                         console.log(unidad + unidad_quiero)
 
                         break;
 
 
-                        default:
+                    default:
                         console.log(" Si quiere de Celsius a --> k = kelvin | f = fahrenheit")
                         break;
                 }
@@ -144,7 +144,7 @@ function MenuConver(num, uni_tengo, unidad_quiero, tipo) {
 
         default:
 
-        console.log( " Escriba  l = longitud | t = temperatura")
+            console.log(" Escriba  l = longitud | t = temperatura")
             break;
     }
 }
